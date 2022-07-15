@@ -403,7 +403,7 @@ header .top_head {
 	text-transform: uppercase;
 	font-weight: 900;
 	color: #fff;
-	margin-right: 40px;
+	margin-right: 30px;
 	position: relative;
 }
 .menu ul li:hover:after {
@@ -419,11 +419,8 @@ header .top_head {
 	height: 2px;
 	transition: width 0.25s;
 }
-.menu ul li:last-of=type {
-	margin-right: 0;
-}
 .logo {
-	margin-right: 125px;
+	margin-right: 55px;
 }
 .logo img {
 	width: 100%;
@@ -1136,6 +1133,10 @@ h2 span {
 	line-height: 40px;
 	color: #fff;
 	cursor: pointer;
+	position: relative;
+}
+.structure-open span.minus {
+	top: -3px;
 }
 .structure .button {
 	margin: 50px auto 0;
@@ -1202,17 +1203,19 @@ h2 span {
 	position: relative;
 	z-index: 1;
 }
-.module .module-list li {
+.module-list li {
 	color: #4b4b4b;
 	font-size: 16px;
 	line-height: 48px;
 	padding-left: 24px;
 	position: relative;
 }
-.module .module-list {
-	margin-bottom: 45px;
+.module-list {
+	display: none;
+	margin-bottom: 0;
+	padding: 15px;
 }
-.module .module-list li:before {
+.module-list li:before {
 	content: "";
 	left: 0;
 	top: 17px;
@@ -1693,12 +1696,37 @@ h2 span {
 	display: none;
 }
 .lang {
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	border: 1px solid #fff;
-    height: 40px;
-    display: block;
-    line-height: 40px;
-    width: 40px;
-    text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: 40px;
+	text-align: center;
+	margin-right: 0;
+	color: #fff;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #fff;
+	background-color: #000;
+}
+.lang span {
+	display: block;
+}
+.lang-link {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: -1px;
+	width: 40px;
+	border: 1px solid #fff;
+	border-top: 0;
+	background-color: #000;
 }
 .menu ul li:last-of-type:after {
 	display: none;

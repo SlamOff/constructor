@@ -17,6 +17,7 @@
 	}
 	.menu ul li {
 		margin-right: 30px;
+		font-size: 10px;
 	}
 	.arrow-top p {
 		margin-left: 40px;
@@ -299,10 +300,19 @@
 	.lang {
 		margin: 0 auto;
 		width: 55px;
-    	height: 55px;
-    	line-height: 55px;
-    	position: relative;
-    	z-index: 2;
+		height: 55px;
+		line-height: 55px;
+		z-index: 2;
+		position: absolute;
+		left: 50%;
+		top: 12px;
+		transform: translateX(-50%);
+		margin-bottom: 0!important;
+		border: 1px solid #fff;
+	}
+	.lang-link {
+		width: 55px;
+		background-color: #000
 	}
 	.made_by {
 		text-align: center;
@@ -699,9 +709,6 @@
 		color: #fff;
 		margin-bottom: 7vh;
 	}
-	.menu-mobile ul li:last-of-type {
-		margin-bottom: 0;
-	}
 	.menu-tel {
 		font-size: 30px;
 		font-weight: 900;
@@ -715,32 +722,23 @@
 	.module .slick-dots:before {
 		display: none;
 	}
+	.module-list {
+		padding: 0 0 10px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.share .timer__item {
-		margin-right: 1rem;
-		width: 60px;
-		height: 60px;
+	.module-list li {
+		font-size: 14px;
+		line-height: 24px;
 	}
-	.share .timer__item:last-of-type {
-		margin-right: 0;
+	.structure-open {
+		right: 0;
 	}
-	button#videoButton {
-		width: 5rem;
-		height: 5rem;
-	}
-	.open_form .timer__item {
-		height: 60px;
-		width: 60px;
-		padding-top: 1rem;
-	}
-	section h3 {
-		font-size: 2.8rem;
-	}
-	.open_form .timer__item {
-		margin-right: 1rem;
+	.module-list li:before {
+		top: 6px;
 	}
 	.structure-number {
 		font-size: 14px;
