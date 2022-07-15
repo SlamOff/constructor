@@ -627,18 +627,19 @@ h2 span {
 }
 .video video {
 	-webkit-object-fit: cover;
-    -moz-object-fit: cover;
-    -ms-object-fit: cover;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 100%;
-    display: block;
+	-moz-object-fit: cover;
+	-ms-object-fit: cover;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+	height: 460px;
+	display: block;
 }
-.video button#videoButton {
-	width: 9.6rem;
-	height: 9.6rem;
+.video-button {
+	width: 125px;
+	height: 125px;
 	background-size: 100% 100%;
-	background-image: url("../img/video_btn.png");
+	background-image: url("../img/play.png");
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -859,12 +860,19 @@ h2 span {
 .review {
 	padding: 210px 0;
 }
+.review .video-button {
+	width: 70px;
+	height: 70px;
+}
 .review .row, .review .left {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
 }
 .review .left {
 	-webkit-box-orient: vertical;
@@ -894,6 +902,12 @@ h2 span {
 	max-width: 770px;
 	position: relative;
 }
+.review .video_wrapper video {
+	height: 255px;
+}
+.review .mb .video_wrapper {
+	margin: 0 auto 30px;
+}
 .review video {
 	-webkit-object-fit: cover;
 	-moz-object-fit: cover;
@@ -902,18 +916,6 @@ h2 span {
 	object-fit: cover;
 	width: 100%;
 	display: block;
-}
-.review button#videoButton {
-	width: 9.6rem;
-	height: 9.6rem;
-	background-size: 100% 100%;
-	background-image: url("../img/video_btn.png");
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
 }
 .steps {
 	padding: 70px 0 100px;
@@ -1026,6 +1028,10 @@ h2 span {
 }
 .company .button {
 	margin-top: 50px;
+}
+.company .row {
+	position: relative;
+	z-index: 2;
 }
 .structure {
 	padding: 170px 0 160px;
@@ -1463,7 +1469,7 @@ h2 span {
 	justify-content: center;
 }
 .reg .reg-pict img {
-	width: 45px;
+	max-width: 45px;
 	margin-bottom: 20px;
 }
 .reg .col-md-4:last-of-type img {

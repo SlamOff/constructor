@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8" />
 	<title>Бизнес Конструктор</title>
@@ -20,10 +20,10 @@
 	<main>
 		<div class="menu-mobile">
 			<ul>
-				<li><a class="scroll" href="#">Описание</a></li>
-				<li><a class="scroll" href="#">Эксперт</a></li>
-				<li><a class="scroll" href="#">Структура программы</a></li>
-				<li><a class="scroll" href="#">Зарегистрироваться</a></li>
+				<li><a class="scroll" href="#program">Описание</a></li>
+				<li><a class="scroll" href="#author">Эксперт</a></li>
+				<li><a class="scroll" href="#program">Структура программы</a></li>
+				<li><a class="scroll" href="#reg">Зарегистрироваться</a></li>
 			</ul>
 			<div class="menu-mobile-bg">
 				<a class="menu-tel" href="tel:+380931057317">+38 093 105 73 17</a>
@@ -51,10 +51,10 @@
 					</div>
 					<div class="menu">
 						<ul>
-							<li><a class="scroll" href="#">Описание</a></li>
-							<li><a class="scroll" href="#">Эксперт</a></li>
-							<li><a class="scroll" href="#">Структура программы</a></li>
-							<li><a class="scroll" href="#">Зарегистрироваться</a></li>
+							<li><a class="scroll" href="#program">Описание</a></li>
+							<li><a class="scroll" href="#author">Эксперт</a></li>
+							<li><a class="scroll" href="#program">Структура программы</a></li>
+							<li><a class="scroll" href="#reg">Зарегистрироваться</a></li>
 						</ul>
 					</div>
 					<div class="toggle_btn">
@@ -77,7 +77,7 @@
 					</div>
 					<div class="arrow-top">
 						<p class="mob-author">Автор и главный эксперт: <br><b>Кирилл Куницкий</b></p>
-						<a class="popup button button-red" href="#contactFormWrapper">Узнать, как программа <br>поможет моему бизнесу</a>
+						<a class="popup button button-red" href="#topFormWrapper">Узнать, как программа <br>поможет моему бизнесу</a>
 						<p class="hidden-xs">Автор и главный эксперт: <br><b>Кирилл Куницкий</b></p>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 	</main>
 	<!-- END Header-->
 
-	<section class="program">
+	<section class="program" id="program">
 		<div class="container">
 			<h3>
 				Программа «Собственник малого бизнеса» —
@@ -140,7 +140,7 @@
 					<p>Подготовите компанию <br>к ухудшению состояния мировой экономики</p>
 				</div>
 				<div class="col-md-offset-4 col-md-4">
-					<a class="scroll button button-blue" href="#">Хочу навести порядок <br>в своей компании</a>
+					<a class="scroll button button-blue" href="#reg">Хочу навести порядок <br>в своей компании</a>
 				</div>
 			</div>
 		</div>
@@ -151,15 +151,15 @@
 			<div class="row">
 				<div class="col-md-5 left">
 					<h3>Суть программы «Собственник малого бизнеса» в одном видео</h3>
-					<a class="scroll button hidden-xs" href="#">Хочу навести порядок <br>в своей компании</a>
+					<a class="scroll button hidden-xs hidden-sm" href="#reg">Хочу навести порядок <br>в своей компании</a>
 				</div>
 				<div class="col-md-7">
 					<div class="video_wrapper">
-						<video controls="contols" poster="img/video.jpg" id="mainVideo" src="video.mp4"></video>
-						<button id="videoButton"></button>
+						<video src="video-1.mp4" poster="img/poster-1.jpg" controls type="video/mp4"></video>
+						<button class="video-button"></button>
 					</div>
 				</div>
-				<a class="scroll button button-mobile" href="#">Хочу навести порядок <br>в своей компании</a>
+				<a class="scroll button hidden-md hidden-lg" href="#reg">Хочу навести порядок <br>в своей компании</a>
 			</div>
 		</div>
 	</section>
@@ -261,11 +261,11 @@
 					</div>
 				</div>
 			</div>
-			<a class="scroll button" href="#">Хочу также решить <br>эти задачи</a>
+			<a class="scroll button" href="#reg">Хочу также решить <br>эти задачи</a>
 		</div>
 	</section>
 
-	<section class="author">
+	<section class="author" id="author">
 		<img class="hidden-xs author-bg" src="img/author-bg.png" alt="">
 		<div class="container relative">
 			<div class="row">
@@ -287,7 +287,7 @@
 					<p><img src="img/list-item.png" alt="">Компании, собственники которых прошли образовательно-консалтинговые программы Кирилла Куницкого, в среднем показывают 2,5-кратный рост финансовых результатов уже через год.</p>
 				</div>
 				<div class="col-md-4 col-md-offset-4">
-					<a class="scroll button button-black" href="#">Задай вопрос <br>Кириллу Куницкому</a>
+					<a class="popup button button-black" href="#askFormWrapper">Задай вопрос <br>Кириллу Куницкому</a>
 				</div>
 			</div>
 		</div>
@@ -328,7 +328,7 @@
 					</div>
 				</div>
 			</div>
-			<a class="scroll button" href="#">Присоединиться <br>к программе</a>
+			<a class="scroll button" href="#reg">Присоединиться <br>к программе</a>
 		</div>
 	</section>
 
@@ -337,16 +337,39 @@
 			<div class="row">
 				<div class="col-md-4 left">
 					<h3>Что говорят <br>о программе <br>выпускники предыдущих <br>потоков</h3>
-					<a class="scroll button button-blue hidden-xs" href="#">Хочу такой же результат</a>
+					<a class="scroll button button-blue hidden-xs hidden-sm" href="#reg">Хочу такой же результат</a>
 				</div>
-				<div class="col-md-7">
-					<div class="video_wrapper">
-						<video controls="contols" poster="img/video.jpg" id="mainVideo" src="video.mp4"></video>
-						<button id="videoButton"></button>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-6 mb">
+							<div class="video_wrapper">
+								<video src="video-1.mp4" poster="img/poster-1.jpg" controls type="video/mp4"></video>
+								<button class="video-button"></button>
+							</div>
+						</div>
+						<div class="col-md-6 mb">
+							<div class="video_wrapper">
+								<video src="video-1.mp4" poster="img/poster-1.jpg" controls type="video/mp4"></video>
+								<button class="video-button"></button>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="video_wrapper">
+								<video src="video-1.mp4" poster="img/poster-1.jpg" controls type="video/mp4"></video>
+								<button class="video-button"></button>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="video_wrapper">
+								<video src="video-1.mp4" poster="img/poster-1.jpg" controls type="video/mp4"></video>
+								<button class="video-button"></button>
+							</div>
+						</div>
 					</div>
+					
 				</div>
 			</div>
-			<a class="scroll button button-blue button-mobile" href="#">Хочу такой же результат</a>
+			<a class="scroll button button-blue button-mobile hidden-lg hidden-md" href="#reg">Хочу такой же результат</a>
 		</div>
 	</section>
 
@@ -450,7 +473,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="steps-item">
-						<a class="scroll button" href="#">Хочу присоединиться <br>к программе</a>
+						<a class="scroll button" href="#reg">Хочу присоединиться <br>к программе</a>
 					</div>
 				</div>
 			</div>
@@ -518,7 +541,7 @@
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-2">
-					<a class="scroll button button-red" href="#">Хочу получить индивидуальную <br>помощь по моему бизнесу</a>
+					<a class="popup button button-red" href="#individualFormWrapper">Хочу получить индивидуальную <br>помощь по моему бизнесу</a>
 				</div>
 			</div>
 		</div>
@@ -617,7 +640,7 @@
 					</div>
 				</div>
 			</div>
-			<a class="scroll button" href="#">Хочу всё это внедрить</a>
+			<a class="scroll button" href="#reg">Хочу всё это внедрить</a>
 		</div>
 	</section>
 
@@ -640,7 +663,7 @@
 								<li><span>Задания по внедрению</span></li>
 								<li><span>Мастер-группы (watch only)</span></li>
 							</ul>
-							<a class="button" href="">Название кнопки</a>
+							<a class="popup button" href="#takeFormWrapper1">Узнать стоимость</a>
 						</div>
 						<div class="package-card pc-2">
 							<div><img src="img/package-2.png" alt=""></div>
@@ -655,7 +678,7 @@
 								<li><span>Сопровождение консультантом</span></li>
 								<li><span>Отраслевые воркшопы</span></li>
 							</ul>
-							<a class="button" href="">Название кнопки</a>
+							<a class="popup button" href="#takeFormWrapper2">Узнать стоимость</a>
 						</div>
 					</div>
 				</div>
@@ -663,7 +686,7 @@
 		</div>
 	</section>
 
-	<section class="reg">
+	<section class="reg" id="reg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 left">
@@ -733,10 +756,10 @@
 	<section class="bottom-menu">
 		<div class="container">
 			<ul>
-				<li><a class="scroll" href="#">Описание</a></li>
-				<li><a class="scroll" href="#">Эксперт</a></li>
-				<li><a class="scroll" href="#">Структура программы</a></li>
-				<li><a class="scroll" href="#">Зарегистрироваться</a></li>
+				<li><a class="scroll" href="#program">Описание</a></li>
+				<li><a class="scroll" href="#author">Эксперт</a></li>
+				<li><a class="scroll" href="#program">Структура программы</a></li>
+				<li><a class="scroll" href="#reg">Зарегистрироваться</a></li>
 			</ul>
 		</div>
 	</section>
@@ -833,7 +856,6 @@
 						<ul class="module-list">
 							<li>Инструменты подбора персонала для малого бизнеса</li>
 							<li>Как малому бизнесу конкурировать на рынке труда с большими компаниями</li>
-							<li>Как малому бизнесу конкурировать на рынке труда с большими компаниями</li>
 							<li>Как с самого начала заложить «ядро» правильной корпоративной культуры</li>
 							<li>Основы финансовой мотивации</li>
 							<li>Инструменты нематериальной мотивации</li>
@@ -903,30 +925,70 @@
 	<div class="hidden">
 		<div class="form_wrapper" id="topFormWrapper">
 			<h6>Заполните форму,</h6>
-			<p>и наш менеджер перезвонит Вам в течение 5 мин, чтобы ответить на все вопросы</p>
+			<p>для того, чтобы наш менеджер рассказал Вам детали программы</p>
 			<form method="post" class="form" id="topForm" action="mail.php">
-				<input type="hidden" name="whatform" value="Форма - Перезвоните мне" />
+				<input type="hidden" name="whatform" value="Форма - Детали программы" />
 				<input type="text" name="name" placeholder="Ваше имя" />
 				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
-				<input type="email" name="email" placeholder="Ваш e-mail" />
-				<button class="button button-blue">Перезвоните мне</button>
+				<button class="button button-blue">Узнать детали</button>
 			</form>
 		</div>
 	</div>
-
 	<div class="hidden">
-		<div class="form_wrapper" id="contactFormWrapper">
+		<div class="form_wrapper" id="askFormWrapper">
 			<h6>Заполните форму,</h6>
-			<p>чтобы задать вопрос нашему специалисту</p>
-			<form method="post" class="form" id="contactForm" action="mail.php">
-				<input type="hidden" name="whatform" value="Форма - Задать вопрос" />
+			<p>для того, чтобы личный помощник Кирилла связался с Вами и ответил на вопросы</p>
+			<form method="post" class="form" id="askForm" action="mail.php">
+				<input type="hidden" name="whatform" value="Форма - Ответ от Кирилла" />
 				<input type="text" name="name" placeholder="Ваше имя" />
 				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<input type="tel" name="email" class="email" placeholder="Ваш email" />
 				<textarea name="message" placeholder="Ваш вопрос"></textarea>
 				<button class="button button-blue">Задать вопрос</button>
 			</form>
 		</div>
 	</div>
+	<div class="hidden">
+		<div class="form_wrapper" id="individualFormWrapper">
+			<h6>Заполните форму,</h6>
+			<p>для того, чтобы наш менеджер рассказал о вариантах индивидуальной помощи Вашему бизнесу</p>
+			<form method="post" class="form" id="individualForm" action="mail.php">
+				<input type="hidden" name="whatform" value="Форма - варианты индивидуальной помощи Вашему бизнесу" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="button button-blue">Узнать варианты</button>
+			</form>
+		</div>
+	</div>
+	<div class="hidden">
+		<div class="form_wrapper" id="takeFormWrapper1">
+			<h6>Заполните форму,</h6>
+			<p>для того, чтобы узнать стоимость и детали участия в пакете Core</p>
+			<form method="post" class="form" id="takeForm1" action="mail.php">
+				<input type="hidden" name="whatform" value="Форма - Пакет Core" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="button button-blue">Узнать стоимость</button>
+			</form>
+		</div>
+	</div>
+	<div class="hidden">
+		<div class="form_wrapper" id="takeFormWrapper2">
+			<h6>Заполните форму,</h6>
+			<p>для того, чтобы узнать стоимость и детали участия в пакете Pro</p>
+			<form method="post" class="form" id="takeForm2" action="mail.php">
+				<input type="hidden" name="whatform" value="Форма - Пакет Pro" />
+				<input type="text" name="name" placeholder="Ваше имя" />
+				<input type="tel" name="phone" class="phone" placeholder="Ваш телефон" />
+				<button class="button button-blue">Узнать стоимость</button>
+			</form>
+		</div>
+	</div>
+
+
+	
+
+	
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>

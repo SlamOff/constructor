@@ -76,31 +76,22 @@ $(document).ready(function() {
 		$('.slider').slick('unslick');
 	};
 
+	$('.video-button').on('click', function(e) {
+		e.preventDefault();
+		$(this).fadeOut('fast');
+		$(this).siblings('video').get(0).play();
+	});
+
+	$('.video_wrapper video').on('play', function() {
+		$(this).siblings('.video-button').fadeOut('fast');
+	});
 	
 
-	/*
-	//video player + button
-	$('#mainVideo').click(function(){
-		if (this.paused) {
-			this.play();
-			$('#videoButton').fadeOut('fast');
-		} else {
-			$('#videoButton').fadeIn('fast');
-			this.pause();
-		}
-	});
-	$('#videoButton').on('click', function(event) {
-		event.preventDefault();
-		$('#videoButton').fadeOut('fast');
-		$('#mainVideo').get(0).play();
-	});
-	*/
-
-	/*
+	
 	//validation
-		var locationURL = window.location.search;
-	if ( locationURL == '?p=179&lang=ua' ) {
-		var validationName = 'Обов'язково для заповнення';
+		var locationURL = window.location.pathname;
+	if ( locationURL == '/ua.html' ) {
+		var validationName = "Обов'язково для заповнення";
 		var validationNameMax = 'Від 2 до 16 літер';
 		var validationPhone = 'Введіть вірний номер';
 		var validationEmail = 'Введіть вірний E-mail';
@@ -143,8 +134,189 @@ $(document).ready(function() {
 			}
 		}
 	});
+	$('#askForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#individualForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#takeForm1').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#takeForm2').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#regForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
+	$('#contactForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: validationName,
+				minlength: validationNameMax,
+				maxlength: validationNameMax
+			},
+			email: {
+				required: validationName,
+				email: validationEmail
+			},
+			phone: {
+				required: validationPhone
+			}
+		}
+	});
 
-	*/
+
+	
 
 
 });
